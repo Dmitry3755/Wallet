@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner">10dp</dimen>
+
+    <dimen name="spacer_1">1dp</dimen>
+    <dimen name="spacer_15">15dp</dimen>
+
+    <dimen name="text_size_24">24sp</dimen>
+</resources>

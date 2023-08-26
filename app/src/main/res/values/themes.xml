@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NFCTagReader" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.NFCTagReader" parent="Base.Theme.NFCTagReader" />
+
+    <style name="preview_view">
+        <item name="android:background">@drawable/bg_preview_view</item>
+    </style>
+
+    <style name="text_view">
+        <item name="android:background">@drawable/bg_text_view</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="round_image_button">
+        <item name="android:background">@drawable/bg_button</item>
+    </style>
+
+</resources>
