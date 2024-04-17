@@ -3,7 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lilac">#7165E3</color>
-
-
-
+    <color name="red">#FF0000</color>
+    <color name="sapphire_blue">#1C1939</color>
+    <color name="transparent_sapphire_blue">#CC1C1939</color>
+    <color name="bright_gray">#F7F7F7</color>
+    <color name="cobalt_blue">#2C2948</color>
+    <color name="transparent">#00000000</color>
+    <color name="medium_light_shade_of_blue">#3D5CFF</color>
 </resources>

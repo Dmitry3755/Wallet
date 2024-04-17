@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "546236167813",
-    "project_id": "nfc-tag-reader",
-    "storage_bucket": "nfc-tag-reader.appspot.com"
+    "project_number": "124189839749",
+    "project_id": "wallet-44701",
+    "storage_bucket": "wallet-44701.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:546236167813:android:a7a02a76c8b502417e9bec",
+        "mobilesdk_app_id": "1:124189839749:android:ab8fa890c38d74d03a74ec",
         "android_client_info": {
           "package_name": "com.example.nfctagreader"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "546236167813-ehja8oc5nqffgug3u9u122pu4ivcrnuo.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB46OnOaO4iib0cw_Kqw79W6wj9OTvxmSM"
+          "current_key": "AIzaSyARiGtHACLRWpLBRDvcHql0dColw0dIphY"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "546236167813-ehja8oc5nqffgug3u9u122pu4ivcrnuo.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

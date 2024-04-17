@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "NFC tag Reader"
 include(":app")
- 
+include(":data")
+include(":domain")

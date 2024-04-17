@@ -3,11 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/mainScreenFragment">
+    app:startDestination="@id/navigation_sign_up">
 
     <fragment
-        android:id="@+id/mainScreenFragment"
-        android:name="com.example.nfctagreader.presentation.fragment.ScanCardFragment"
-        android:label="fragment_main_screen"
-        tools:layout="@layout/fragment_main_screen" />
+        android:id="@+id/navigation_sign_up"
+        android:name="com.example.nfctagreader.ui.fragments.sign_up.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fmt_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_walletMainFragment"
+            app:destination="@id/navigation_wallet_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_sign_in"
+        android:name="com.example.nfctagreader.ui.fragments.sign_in.SignInFragment"
+        android:label="fmt_sign_in"
+        tools:layout="@layout/fmt_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/navigation_sign_up" />
+        <action
+            android:id="@+id/action_signInFragment_to_walletMainFragment"
+            app:destination="@id/navigation_wallet_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_wallet_main"
+        android:name="com.example.nfctagreader.ui.fragments.wallet.WalletMainFragment"
+        android:label="fragment_wallet_main"
+        tools:layout="@layout/fragment_wallet_main" >
+        <action
+            android:id="@+id/action_navigation_wallet_main_to_scanCardFragment"
+            app:destination="@id/scanCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanCardFragment"
+        android:name="com.example.nfctagreader.ui.fragments.card_scan.ScanCardFragment"
+        android:label="fmt_scanner_card_screen"
+        tools:layout="@layout/fmt_scanner_card_screen" />
 </navigation>

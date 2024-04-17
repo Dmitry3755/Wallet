@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="corner">10dp</dimen>
+    <dimen name="corner_radius_10">10dp</dimen>
 
     <dimen name="spacer_1">1dp</dimen>
+    <dimen name="spacer_2">2dp</dimen>
+    <dimen name="spacer_4">4dp</dimen>
+    <dimen name="spacer_5">5dp</dimen>
+    <dimen name="spacer_8">8dp</dimen>
+    <dimen name="spacer_10">10dp</dimen>
+    <dimen name="spacer_12">12dp</dimen>
+    <dimen name="spacer_14">14dp</dimen>
     <dimen name="spacer_15">15dp</dimen>
+    <dimen name="spacer_16">16dp</dimen>
+    <dimen name="spacer_18">18dp</dimen>
+    <dimen name="spacer_20">20dp</dimen>
+    <dimen name="spacer_21">21dp</dimen>
+    <dimen name="spacer_30">30dp</dimen>
+    <dimen name="spacer_62">62dp</dimen>
+    <dimen name="spacer_90">90dp</dimen>
 
+    <dimen name="text_size_35">35sp</dimen>
     <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+
+    <dimen name="element_min_height">50dp</dimen>
+
 </resources>

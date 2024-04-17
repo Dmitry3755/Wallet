@@ -1,11 +1,84 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.NFCTagReader" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.NFCTagReader" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryVariant">@color/lilac</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
     </style>
 
     <style name="Theme.NFCTagReader" parent="Base.Theme.NFCTagReader" />
+
+    <style name="title">
+        <item name="android:layout_gravity">center_horizontal|top</item>
+        <item name="android:textColor">@color/sapphire_blue</item>
+        <item name="android:textSize">@dimen/text_size_35</item>
+        <item name="android:fontFamily">@font/dm_sans_bold</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="default_text">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/sapphire_blue</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:translationY">-2.73sp</item>
+    </style>
+
+    <style name="check_box">
+        <item name="android:textColor">@color/transparent_sapphire_blue</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="android:translationY">-0.54sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColorLink">@color/medium_light_shade_of_blue</item>
+    </style>
+
+    <style name="button">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_17</item>
+        <item name="android:fontFamily">@font/dm_sans_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="minHeight">@dimen/element_min_height</item>
+    </style>
+
+
+    <style name="text_button">
+        <item name="android:background">@drawable/bg_text_button</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:translationY">-2.73sp</item>
+    </style>
+
+    <style name="text_input_edit_text" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:background">@drawable/bg_text_input_edit_text</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/cobalt_blue</item>
+        <item name="android:textColorHint">@color/cobalt_blue</item>
+        <item name="boxStrokeColor">@null</item>
+    </style>
+
+
+  <!--  <style name="text_button">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/black</item>
+    </style>-->
 
     <style name="preview_view">
         <item name="android:background">@drawable/bg_preview_view</item>
@@ -17,7 +90,7 @@
     </style>
 
     <style name="round_image_button">
-        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:background">@drawable/bg_image_button</item>
     </style>
 
 </resources>

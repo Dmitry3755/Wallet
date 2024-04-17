@@ -1,6 +1,26 @@
 <resources>
-    <string name="app_name">NFC tag Reader</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Wallet</string>
+
+    <string name="fmt_splash_screen_text_of_greeting">Wallet</string>
+
+    <string name="fmt_sign_up_title_text_welcome">Добро пожаловать!</string>
+    <string name="fmt_sign_up_text_provide_your_details">Пожалуйста, предоставьте следующие данные для вашей новой учетной записи</string>
+    <string name="fmt_sign_up_hint_text_full_name">Полное Имя</string>
+    <string name="fmt_sign_up_text_user_agreement">Создавая свою учетную запись, вы соглашаетесь с нашими<a href="https://habr.com/ru/articles/486328/">Правилами и условиями.</a></string>
+    <string name="btn_text_sign_up">Зарегистрироваться</string>
+    <string name="btn_text_sign_up_with_phone_number">Войти по номеру телефона</string>
+
+    <string name="fmt_sign_in_title_text_welcome_back">С возвращением!</string>
+    <string name="fmt_sign_in_text_sign_in">Войдите, чтобы продолжить</string>
+    <string name="fmt_sign_in_text_forgot_password">Забыли пароль?</string>
+    <string name="fmt_sign_in_text_you_dont_have_account">У вас нет аккаунта?</string>
+    <string name="fmt_sign_in_text_create_account">Создать</string>
+    <string name="fmt_sign_in_text_enter">Войти</string>
+
+    <string name="fmt_sign_in_up_hint_text_password">Пароль</string>
+    <string name="fmt_sign_up_in_hint_text_email_address">Email</string>
+    <string name="fmt_sign_up_in_required">Обязательно*</string>
+
     <string name="error_provide_access_camera">К сожалению, вы не предоставили доступ к камере</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
