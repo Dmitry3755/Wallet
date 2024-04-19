@@ -52,15 +52,17 @@ android {
 
 dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.core:core-ktx:1.13.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.databinding:databinding-runtime:8.3.1")
+    implementation("androidx.databinding:databinding-runtime:8.3.2")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation ("com.google.android.gms:play-services-vision:20.1.3")
     implementation("com.google.android.material:material:1.11.0")
     implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
 
     implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
 

@@ -14,7 +14,7 @@ import com.example.nfctagreader.view_model.DaggerViewModelFactory
 import javax.inject.Inject
 
 
-class ScanCardFragment : BaseFragment(R.layout.fmt_scanner_card_screen) {
+class ScanCardFragment : BaseFragment() {
 
     @Inject
     lateinit var daggerViewModelFactory: ViewModelProvider.Factory

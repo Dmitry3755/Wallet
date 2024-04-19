@@ -5,7 +5,7 @@ import javax.inject.Inject
 
 class UserSignUpUseCaseFb @Inject constructor(private val userAuthRepository: UserAuthRepositoryFb) {
 
-    suspend fun invoke(email: String, password: String, fullName: String) =
-        userAuthRepository.signUp(email, password, fullName)
+     fun invoke(email: String, password: String, fullName: String) =
+        userAuthRepository.createProfile(email, password, fullName)
 
 }

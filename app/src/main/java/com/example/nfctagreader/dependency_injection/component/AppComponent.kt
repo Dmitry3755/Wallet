@@ -1,9 +1,12 @@
 package com.example.nfctagreader.dependency_injection.component
 
 import android.app.Application
+import android.content.Context
+import com.example.nfctagreader.dependency_injection.annotations.ApplicationContext
 import com.example.nfctagreader.dependency_injection.modules.FirebaseRepositoriesBindsModule
 import com.example.nfctagreader.dependency_injection.application.WalletApplicationClass
 import com.example.nfctagreader.dependency_injection.modules.AppModule
+import com.example.nfctagreader.dependency_injection.modules.PreferenceModule
 import com.example.nfctagreader.dependency_injection.modules.ViewModelModule
 import dagger.BindsInstance
 import dagger.Component
@@ -17,6 +20,7 @@ import javax.inject.Singleton
     modules = [AppModule::class,
         ViewModelModule::class,
         FirebaseRepositoriesBindsModule::class,
+        PreferenceModule::class,
         AndroidInjectionModule::class,
         AndroidSupportInjectionModule::class]
 )

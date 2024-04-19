@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_something_went_wrong">Упс. Что-то пошло не так</string>
+</resources>

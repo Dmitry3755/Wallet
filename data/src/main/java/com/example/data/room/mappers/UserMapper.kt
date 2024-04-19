@@ -8,6 +8,7 @@ fun UserDb.toUser(): User {
         uid = this.uid,
         fullName = this.fullName,
         email = this.email,
+        password = null,
         mobilePhone = this.mobilePhone
     )
 }

@@ -1,5 +1,6 @@
 package com.example.nfctagreader.ui.fragments.sign_in
 
+import com.example.domain.entities.User
 import com.example.nfctagreader.ui.base.BaseViewModel
 import javax.inject.Inject
 

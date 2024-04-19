@@ -9,13 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.viewbinding.ViewBinding
 import com.example.nfctagreader.databinding.FmtSignUpBinding
+import com.example.nfctagreader.ui.activities.MainActivity
 import com.example.nfctagreader.ui.navigation.NavigationDelegate
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.coroutines.launch
 
-abstract class BaseFragment(private val fragmentId: Int) : Fragment() {
-
-    private lateinit var inflatedViewBaseFragment: View
+abstract class BaseFragment : Fragment() {
 
     protected abstract val mViewModel: BaseViewModel
     private val mNavigationDelegate: NavigationDelegate = NavigationDelegate(this)
@@ -25,19 +24,15 @@ abstract class BaseFragment(private val fragmentId: Int) : Fragment() {
         super.onAttach(context)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        inflatedViewBaseFragment = inflater.inflate(fragmentId, container, false)
-        return inflatedViewBaseFragment
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mViewModel.let {
             mNavigationDelegate.setUpNavigate(it)
+        }
+        lifecycleScope.launchWhenStarted {
+            mViewModel.showSnackBarWithMessage.collect {
+                (requireActivity() as MainActivity).showSnackBarWithMessage(it)
+            }
         }
     }
 

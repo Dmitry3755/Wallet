@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_signUpFragment_to_walletMainFragment"
             app:destination="@id/navigation_wallet_main" />
+        <action
+            android:id="@+id/action_navigation_sign_up_to_navigation_sign_in"
+            app:destination="@id/navigation_sign_in" />
     </fragment>
     <fragment
         android:id="@+id/navigation_sign_in"

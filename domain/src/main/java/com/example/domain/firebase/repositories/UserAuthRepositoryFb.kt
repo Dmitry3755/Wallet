@@ -1,15 +1,16 @@
 package com.example.domain.firebase.repositories
 
 import com.example.domain.entities.User
-import com.example.domain.utils.Result
+import com.example.domain.utils.LoadingStatus
+import kotlinx.coroutines.flow.Flow
 
 interface UserAuthRepositoryFb {
 
     val currentUser: User?
 
-    suspend fun signIn(email: String, password: String): Result<User?>
+    suspend fun signIn(email: String, password: String): Flow<LoadingStatus<User>>
 
-    suspend fun signUp(email: String, password: String, fullName : String): Result<User?>
+    fun createProfile(email: String, password: String, fullName: String): Flow<LoadingStatus<User>>
 
     suspend fun signOut()
 

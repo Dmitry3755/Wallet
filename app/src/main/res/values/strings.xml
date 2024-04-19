@@ -22,5 +22,8 @@
     <string name="fmt_sign_up_in_required">Обязательно*</string>
 
     <string name="error_provide_access_camera">К сожалению, вы не предоставили доступ к камере</string>
+    <string name="error_text_is_not_empty">Поле не может быть пустым</string>
+    <string name="error_email_incorrect">Адрес электронной почты введён некорректно</string>
+    <string name="error_password_is_too_short">Длина пароля должна быть больше 6 символов</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
