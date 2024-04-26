@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_wallet_main"
+        android:icon="@drawable/ic_wallet"
+        android:title="@string/nav_bar_wallet"/>
+
+    <item android:id="@+id/navigation_scan_card"
+        android:icon="@drawable/ic_plus"
+        android:title=""
+        />
+
+</menu>

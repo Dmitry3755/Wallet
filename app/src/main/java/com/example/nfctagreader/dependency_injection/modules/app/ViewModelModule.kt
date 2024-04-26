@@ -1,11 +1,13 @@
-package com.example.nfctagreader.dependency_injection.modules
+package com.example.nfctagreader.dependency_injection.modules.app
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.nfctagreader.dependency_injection.annotations.ViewModelKey
 import com.example.nfctagreader.ui.activities.MainActivityViewModel
+import com.example.nfctagreader.ui.fragments.card_scan.ScanCardViewModel
 import com.example.nfctagreader.ui.fragments.sign_in.SignInViewModel
 import com.example.nfctagreader.ui.fragments.sign_up.SignUpViewModel
+import com.example.nfctagreader.ui.fragments.wallet.WalletViewModel
 import com.example.nfctagreader.view_model.DaggerViewModelFactory
 import dagger.Binds
 import dagger.Module
@@ -31,4 +33,14 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(MainActivityViewModel::class)
     abstract fun bindMainActivityViewModel(mainActivityViewModel: MainActivityViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(WalletViewModel::class)
+    abstract fun bindWalletViewModel(walletViewModel: WalletViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ScanCardViewModel::class)
+    abstract fun bindScanCardViewModel(scanCardViewModel: ScanCardViewModel): ViewModel
 }

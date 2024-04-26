@@ -33,6 +33,19 @@
         <item name="android:translationY">-2.73sp</item>
     </style>
 
+    <style name="title_view_text">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:fontFamily">@font/dm_sans_bold</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:alpha">1</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:translationY">-2.73sp</item>
+    </style>
+
     <style name="check_box">
         <item name="android:textColor">@color/transparent_sapphire_blue</item>
         <item name="android:textSize">@dimen/text_size_13</item>
@@ -52,6 +65,19 @@
         <item name="minHeight">@dimen/element_min_height</item>
     </style>
 
+    <style name="view">
+        <item name="android:background">@drawable/bg_view</item>
+    </style>
+
+    <style name="image_view">
+        <item name="android:background">@drawable/bg_image_view</item>
+    </style>
+
+    <style name="bottom_nav_view">
+        <item name="android:background">@color/white</item>
+        <item name="itemIconTint">@color/sapphire_blue</item>
+        <item name="itemTextColor">@color/sapphire_blue</item>
+    </style>
 
     <style name="text_button">
         <item name="android:background">@drawable/bg_text_button</item>
@@ -74,11 +100,20 @@
         <item name="boxStrokeColor">@null</item>
     </style>
 
+    <style name="floating_action_button" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+    </style>
 
-  <!--  <style name="text_button">
-        <item name="android:background">@color/transparent</item>
-        <item name="android:textColor">@color/black</item>
-    </style>-->
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorSecondary">@color/lilac</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">5dp</item>
+    </style>
 
     <style name="preview_view">
         <item name="android:background">@drawable/bg_preview_view</item>

@@ -1,7 +1,7 @@
 package com.example.data.preference
 
 import android.content.Context
-import com.example.domain.preference.PreferenceRepository
+import com.example.domain.preference.repositories.PreferenceRepository
 import javax.inject.Inject
 
 class PreferenceRepositoryImpl @Inject constructor(private val preferenceData: PreferenceData) :

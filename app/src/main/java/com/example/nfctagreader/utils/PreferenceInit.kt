@@ -1,4 +1,4 @@
-package com.example.nfctagreader.data_classes
+package com.example.nfctagreader.utils
 
 data class PreferenceInit(
     val SHARED_PREFERENCE_NAME: String = "WALLET_APP",

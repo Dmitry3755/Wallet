@@ -1,20 +1,16 @@
-package com.example.nfctagreader.dependency_injection.modules
+package com.example.nfctagreader.dependency_injection.modules.firebase
 
 import com.example.data.firebase.repositories.UserAuthRepositoryImplFb
 import com.example.domain.firebase.repositories.UserAuthRepositoryFb
-import com.example.nfctagreader.dependency_injection.annotations.FirebaseRepository
+import com.example.nfctagreader.dependency_injection.annotations.qualifiers.FirebaseQualifier
 import dagger.Module
 import dagger.Provides
-import javax.inject.Qualifier
 
-@FirebaseRepository
+@FirebaseQualifier
 @Module(includes = [FirebaseAuthModule::class])
-class FirebaseRepositoriesBindsModule {
+class FirebaseRepositoriesProvidesModule {
 
     @Provides
     fun provideUserRepositoryFb(userRepositoryImpl: UserAuthRepositoryImplFb): UserAuthRepositoryFb =
         userRepositoryImpl
-
-    /* @Binds
-     abstract fun bindsCardRepository(cardRepositoryImpl: CardRepositoryImpl) : CardRepository*/
 }

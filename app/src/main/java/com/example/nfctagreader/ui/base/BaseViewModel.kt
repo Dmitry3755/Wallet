@@ -1,17 +1,16 @@
 package com.example.nfctagreader.ui.base
 
+import androidx.camera.core.ImageProxy
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.data.preference.PreferenceData
+import androidx.lifecycle.viewModelScope
 import com.example.domain.entities.User
-import com.example.domain.preference.use_case.GetStringSharedPref
-import com.example.domain.preference.use_case.SetStringSharedPref
 import com.example.domain.utils.LoadingStatus
-import com.example.nfctagreader.data_classes.PreferenceInit
+import com.example.nfctagreader.utils.PreferenceInit
 import com.example.nfctagreader.ui.navigation.BaseRouter
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableSharedFlow
-import javax.inject.Inject
 
 abstract class BaseViewModel : ViewModel() {
 
@@ -20,6 +19,8 @@ abstract class BaseViewModel : ViewModel() {
     val preferenceInit: PreferenceInit = PreferenceInit()
     val internalProfile: MutableLiveData<User> = MutableLiveData()
     val profile: LiveData<User> = internalProfile
+    val imageProxyFront: MutableLiveData<ImageProxy?> = MutableLiveData()
+    val imageProxyBack: MutableLiveData<ImageProxy?> = MutableLiveData()
 
     val showSnackBarWithMessage = MutableSharedFlow<String>(extraBufferCapacity = 1)
 
@@ -34,10 +35,5 @@ abstract class BaseViewModel : ViewModel() {
             }
         }
     }
-
-    /*        setStringSharedPref(preferenceInit.USER_EMAIL_KEY, user.email!!)
-            setStringSharedPref(preferenceInit.USER_PASSWORD_KEY, user.password!!)
-
-            user.let { internalProfile.postValue(it) }*/
 
 }

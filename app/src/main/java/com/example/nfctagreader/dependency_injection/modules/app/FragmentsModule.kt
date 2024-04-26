@@ -1,4 +1,4 @@
-package com.example.nfctagreader.dependency_injection.modules
+package com.example.nfctagreader.dependency_injection.modules.app
 
 import com.example.nfctagreader.dependency_injection.annotations.FragmentScope
 import com.example.nfctagreader.ui.fragments.card_scan.ScanCardFragment

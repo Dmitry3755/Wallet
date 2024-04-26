@@ -18,6 +18,7 @@ class UserAuthRepositoryImplFb @Inject constructor(private val firebaseAuth: Fir
     override val currentUser: User?
         get() = firebaseAuth.currentUser?.toUser(null)
 
+
     override suspend fun sendResetPassword(email: String): Boolean {
         firebaseAuth.sendPasswordResetEmail(email).await()
         return true
@@ -27,7 +28,7 @@ class UserAuthRepositoryImplFb @Inject constructor(private val firebaseAuth: Fir
         firebaseAuth.signOut()
     }
 
-    override suspend fun signIn(email: String, password: String) =
+    override fun signIn(email: String, password: String) =
         flow {
             emit(LoadingStatus.Loading())
             try {
@@ -42,7 +43,6 @@ class UserAuthRepositoryImplFb @Inject constructor(private val firebaseAuth: Fir
                 )
             }
         }
-
 
     override fun createProfile(email: String, password: String, fullName: String) =
         flow {

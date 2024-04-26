@@ -1,7 +1,7 @@
 package com.example.domain.preference.use_case
 
 import android.content.Context
-import com.example.domain.preference.PreferenceRepository
+import com.example.domain.preference.repositories.PreferenceRepository
 import javax.inject.Inject
 
 class Initialize @Inject constructor(private val preferenceRepository: PreferenceRepository) {

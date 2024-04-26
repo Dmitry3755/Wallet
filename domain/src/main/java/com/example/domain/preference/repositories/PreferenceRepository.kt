@@ -1,4 +1,4 @@
-package com.example.domain.preference
+package com.example.domain.preference.repositories
 
 import android.content.Context
 

@@ -8,7 +8,7 @@ interface UserAuthRepositoryFb {
 
     val currentUser: User?
 
-    suspend fun signIn(email: String, password: String): Flow<LoadingStatus<User>>
+    fun signIn(email: String, password: String): Flow<LoadingStatus<User>>
 
     fun createProfile(email: String, password: String, fullName: String): Flow<LoadingStatus<User>>
 

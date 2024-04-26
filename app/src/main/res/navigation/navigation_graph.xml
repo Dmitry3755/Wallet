@@ -33,13 +33,9 @@
         android:id="@+id/navigation_wallet_main"
         android:name="com.example.nfctagreader.ui.fragments.wallet.WalletMainFragment"
         android:label="fragment_wallet_main"
-        tools:layout="@layout/fragment_wallet_main" >
-        <action
-            android:id="@+id/action_navigation_wallet_main_to_scanCardFragment"
-            app:destination="@id/scanCardFragment" />
-    </fragment>
+        tools:layout="@layout/fmt_wallet_main" />
     <fragment
-        android:id="@+id/scanCardFragment"
+        android:id="@+id/navigation_scan_card"
         android:name="com.example.nfctagreader.ui.fragments.card_scan.ScanCardFragment"
         android:label="fmt_scanner_card_screen"
         tools:layout="@layout/fmt_scanner_card_screen" />

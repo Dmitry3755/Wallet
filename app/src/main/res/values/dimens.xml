@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="corner_radius_10">10dp</dimen>
+    <dimen name="corner_radius_20">20dp</dimen>
+    <dimen name="corner_radius_21">21dp</dimen>
 
     <dimen name="spacer_1">1dp</dimen>
     <dimen name="spacer_2">2dp</dimen>

@@ -1,13 +1,12 @@
 package com.example.nfctagreader.dependency_injection.component
 
 import android.app.Application
-import android.content.Context
-import com.example.nfctagreader.dependency_injection.annotations.ApplicationContext
-import com.example.nfctagreader.dependency_injection.modules.FirebaseRepositoriesBindsModule
+import com.example.nfctagreader.dependency_injection.modules.firebase.FirebaseRepositoriesProvidesModule
 import com.example.nfctagreader.dependency_injection.application.WalletApplicationClass
-import com.example.nfctagreader.dependency_injection.modules.AppModule
-import com.example.nfctagreader.dependency_injection.modules.PreferenceModule
-import com.example.nfctagreader.dependency_injection.modules.ViewModelModule
+import com.example.nfctagreader.dependency_injection.modules.app.AppModule
+import com.example.nfctagreader.dependency_injection.modules.app.ViewModelModule
+import com.example.nfctagreader.dependency_injection.modules.camera.CameraRepositoriesProvidesModule
+import com.example.nfctagreader.dependency_injection.modules.preference.PreferenceRepositoryProvidesModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -19,8 +18,9 @@ import javax.inject.Singleton
 @Component(
     modules = [AppModule::class,
         ViewModelModule::class,
-        FirebaseRepositoriesBindsModule::class,
-        PreferenceModule::class,
+        FirebaseRepositoriesProvidesModule::class,
+        PreferenceRepositoryProvidesModule::class,
+        CameraRepositoriesProvidesModule::class,
         AndroidInjectionModule::class,
         AndroidSupportInjectionModule::class]
 )

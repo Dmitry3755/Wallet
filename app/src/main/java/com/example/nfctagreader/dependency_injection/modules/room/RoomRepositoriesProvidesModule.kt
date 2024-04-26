@@ -1,14 +1,14 @@
-package com.example.nfctagreader.dependency_injection.modules
+package com.example.nfctagreader.dependency_injection.modules.room
 
 import com.example.data.room.repositories.UserAuthRepositoryImplDb
 import com.example.domain.room.repositories.UserAuthRepositoryDb
-import com.example.nfctagreader.dependency_injection.annotations.RoomRepository
+import com.example.nfctagreader.dependency_injection.annotations.qualifiers.RoomQualifier
 import dagger.Module
 import dagger.Provides
 
-@RoomRepository
+@RoomQualifier
 @Module(includes = [DatabaseModule::class])
-class RoomRepositoriesBindsModule {
+class RoomRepositoriesProvidesModule {
 
     @Provides
     fun provideUserAuthRepositoryDb(userAuthRepositoryImplDb: UserAuthRepositoryImplDb): UserAuthRepositoryDb =

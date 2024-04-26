@@ -1,8 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.gms.google-services")
     id("androidx.navigation.safeargs.kotlin")
+    id("com.google.gms.google-services")
     id("kotlin-android")
     id ("kotlin-kapt")
 }
@@ -41,6 +41,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -57,28 +58,27 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.databinding:databinding-runtime:8.3.2")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
-    implementation ("com.google.android.gms:play-services-vision:20.1.3")
     implementation("com.google.android.material:material:1.11.0")
-    implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
+    implementation("com.google.guava:guava:30.1.1-jre")
 
-    implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+    //Camera
+    implementation("androidx.camera:camera-view:1.3.3")
+    implementation("androidx.camera:camera-lifecycle:1.3.3")
 
     //Lifecycle
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 
+    //Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
+
+    //Firebase
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+
     //Nav
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
-
-    //Camera
-    implementation("androidx.camera:camera-core:1.3.2")
-    implementation("androidx.camera:camera-camera2:1.3.2")
-    implementation("androidx.camera:camera-lifecycle:1.3.2")
-    implementation("androidx.camera:camera-view:1.3.2")
 
     //Dagger
     implementation("com.google.dagger:dagger:2.51")
@@ -87,6 +87,9 @@ dependencies {
     implementation("androidx.room:room-ktx:2.6.1")
     kapt("com.google.dagger:dagger-compiler:2.51")
     kapt("com.google.dagger:dagger-android-processor:2.48")
+
+    //Picasso
+    implementation("com.squareup.picasso:picasso:2.8")
 
     //Libs
     implementation(project(mapOf("path" to ":data")))

@@ -1,6 +1,6 @@
 package com.example.domain.preference.use_case
 
-import com.example.domain.preference.PreferenceRepository
+import com.example.domain.preference.repositories.PreferenceRepository
 import javax.inject.Inject
 
 class SetStringSharedPref @Inject constructor(private val preferenceRepository: PreferenceRepository) {

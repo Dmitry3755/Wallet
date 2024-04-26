@@ -1,4 +1,4 @@
-package com.example.nfctagreader.dependency_injection.modules
+package com.example.nfctagreader.dependency_injection.modules.room
 
 import android.content.Context
 import androidx.room.Room

@@ -22,6 +22,8 @@ class SignUpFragment : BaseFragment() {
     override val mViewModel by viewModels<SignUpViewModel>() {
         daggerViewModelFactory
     }
+    override val mIsBottomMenuVisible = false
+
     private var binding: FmtSignUpBinding? = null
 
     override fun onCreateView(

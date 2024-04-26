@@ -3,6 +3,8 @@ package com.example.nfctagreader.ui.base
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -18,6 +20,7 @@ abstract class BaseFragment : Fragment() {
 
     protected abstract val mViewModel: BaseViewModel
     private val mNavigationDelegate: NavigationDelegate = NavigationDelegate(this)
+    open val mIsBottomMenuVisible = true
 
     override fun onAttach(context: Context) {
         AndroidSupportInjection.inject(this)
@@ -34,6 +37,6 @@ abstract class BaseFragment : Fragment() {
                 (requireActivity() as MainActivity).showSnackBarWithMessage(it)
             }
         }
+        (requireActivity() as MainActivity).setNavigationBarVisibility(mIsBottomMenuVisible)
     }
-
 }

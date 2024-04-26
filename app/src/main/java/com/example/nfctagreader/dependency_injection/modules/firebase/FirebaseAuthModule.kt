@@ -1,4 +1,4 @@
-package com.example.nfctagreader.dependency_injection.modules
+package com.example.nfctagreader.dependency_injection.modules.firebase
 
 import com.google.firebase.auth.FirebaseAuth
 import dagger.Module

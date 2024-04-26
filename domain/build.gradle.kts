@@ -38,4 +38,9 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("javax.inject:javax.inject:1")
+
+    //Camera
+    implementation("androidx.camera:camera-view:1.3.3")
+    implementation("androidx.camera:camera-lifecycle:1.3.3")
+
 }
